@@ -25,7 +25,7 @@
         }
 
         h1 {
-            font-size: 6rem;
+            font-size: 4rem;
             animation: bounce 2s infinite;
             display: flex;
             align-items: center;
@@ -49,12 +49,12 @@
         .eight {
             display: inline-block;
             position: relative;
-            width: 150px;
-            height: 280px;
+            width: 100px;
+            height: 180px;
         }
 
         .eight .heart {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #ff6b6b;
             animation: float 3s ease-in-out infinite;
             position: absolute;
@@ -80,7 +80,7 @@
 
         .flower {
             position: absolute;
-            font-size: 2rem;
+            font-size: 1.5rem;
             animation: fall linear infinite;
         }
 
@@ -92,8 +92,8 @@
 
         .confetti {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background-color: #ffcc00;
             animation: confetti-fall 5s linear infinite;
         }
@@ -109,8 +109,8 @@
 
         .sparkle {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background-color: #fff;
             border-radius: 50%;
             animation: sparkle 1.5s infinite;
@@ -128,7 +128,7 @@
         }
 
         .glow {
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b;
             animation: glow 2s infinite alternate;
         }
@@ -143,12 +143,67 @@
         }
 
         .text-3d {
-            font-size: 6rem;
+            font-size: 4rem;
             color: #fff;
             text-shadow: 1px 1px 0 #ff6b6b, 2px 2px 0 #ff4757, 3px 3px 0 #ffcccc,
                          4px 4px 0 #ff6b6b, 5px 5px 0 #ff4757, 6px 6px 0 #ffcccc,
                          7px 7px 0 #ff6b6b, 8px 8px 0 #ff4757, 9px 9px 0 #ffcccc;
             transform: perspective(500px) rotateX(20deg);
+        }
+
+        /* Медіа-запити для мобільних пристроїв */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .text-3d {
+                font-size: 3rem;
+            }
+
+            .eight {
+                width: 80px;
+                height: 140px;
+            }
+
+            .eight .heart {
+                font-size: 1.2rem;
+            }
+
+            .flower {
+                font-size: 1.2rem;
+            }
+
+            .glow {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .text-3d {
+                font-size: 2rem;
+            }
+
+            .eight {
+                width: 60px;
+                height: 100px;
+            }
+
+            .eight .heart {
+                font-size: 1rem;
+            }
+
+            .flower {
+                font-size: 1rem;
+            }
+
+            .glow {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -158,20 +213,20 @@
             З Днем 
             <div class="eight">
                 <!-- Верхнє коло вісімки -->
-                <div class="heart" style="top: 0; left: 50px;">❤️</div>
-                <div class="heart" style="top: 0; left: 100px;">❤️</div>
-                <div class="heart" style="top: 30px; left: 20px;">❤️</div>
-                <div class="heart" style="top: 30px; left: 130px;">❤️</div>
-                <div class="heart" style="top: 60px; left: 50px;">❤️</div>
-                <div class="heart" style="top: 60px; left: 100px;">❤️</div>
+                <div class="heart" style="top: 0; left: 30px;">❤️</div>
+                <div class="heart" style="top: 0; left: 60px;">❤️</div>
+                <div class="heart" style="top: 20px; left: 10px;">❤️</div>
+                <div class="heart" style="top: 20px; left: 80px;">❤️</div>
+                <div class="heart" style="top: 40px; left: 30px;">❤️</div>
+                <div class="heart" style="top: 40px; left: 60px;">❤️</div>
 
                 <!-- Нижнє коло вісімки -->
-                <div class="heart" style="top: 150px; left: 50px;">❤️</div>
-                <div class="heart" style="top: 150px; left: 100px;">❤️</div>
-                <div class="heart" style="top: 180px; left: 20px;">❤️</div>
-                <div class="heart" style="top: 180px; left: 130px;">❤️</div>
-                <div class="heart" style="top: 210px; left: 50px;">❤️</div>
-                <div class="heart" style="top: 210px; left: 100px;">❤️</div>
+                <div class="heart" style="top: 100px; left: 30px;">❤️</div>
+                <div class="heart" style="top: 100px; left: 60px;">❤️</div>
+                <div class="heart" style="top: 120px; left: 10px;">❤️</div>
+                <div class="heart" style="top: 120px; left: 80px;">❤️</div>
+                <div class="heart" style="top: 140px; left: 30px;">❤️</div>
+                <div class="heart" style="top: 140px; left: 60px;">❤️</div>
             </div>
             Березня!
         </h1>
